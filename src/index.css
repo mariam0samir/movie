@@ -1,0 +1,132 @@
+:root {
+  --rt-color-white: #fff;
+    --rt-color-dark: #222;
+    --rt-color-success: #8dc572;
+    --rt-color-error: #be6464;
+    --rt-color-warning: #f0ad4e;
+    --rt-color-info: #337ab7;
+    --rt-opacity: 0.9;
+     --main-color:#e81313e1;
+  --black-color: #080a1a;
+  --blue-Scolor: #0b0f29;
+  --gray-Scolor: #52636f;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: var(--black-color) !important;
+}
+
+a:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: 0 !important;
+}
+a{
+  text-decoration: none;
+}
+img {
+  user-select: none;
+}
+.img-cover {
+  object-fit: cover;
+}
+.trim-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-red {
+  color:  var(--main-color) !important;
+}
+.bg-red {
+  background-color:  var(--main-color)!important;
+}
+.bg-dark-blue {
+  background-color: #080a1a !important;
+}
+.bg-blue {
+  background-color: #0b0f29 !important;
+}
+.text-gray {
+  color: #708290 !important;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+
+
+/* footer */
+footer .logo {
+  margin-top: -25px;
+
+}
+.logo {
+  height: auto;
+  letter-spacing: 4px;
+  width: fit-content;
+}
+.logo > span {
+  color:   var(--main-color);
+  font-weight: 700;
+}
+.logo .m {
+  font-size: 40px;
+}
+.logo .o {
+  font-size: 33px;
+}
+
+.logo .v {
+    font-size: 27px;
+}
+.logo .i {
+  font-size: 25px;
+}
+.logo .e {
+  font-size: 20px;
+}
+.logo .s {
+  font-size: 15px;
+}
+.bg-blue {
+  background-color: rgb(11, 15, 41) !important;
+}
+.bg-dark-blue {
+  background-color: rgb(8, 10, 26) !important;
+}
+@media (min-width: 992px) {
+  .row-cols-lg-4 > * {
+      width: 25%;
+      flex: 0 0 auto;
+  }
+}
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+.text-gray {
+  color: #708290 !important;
+}
+footer li{
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+footer li:hover {
+  color: white;
+  transform: translateX(15px); -webkit-transform: translateX(15px); -moz-transform: translateX(15px); -ms-transform: translateX(15px); -o-transform: translateX(15px);
+}
+footer li:hover {
+  color: white;
+ }

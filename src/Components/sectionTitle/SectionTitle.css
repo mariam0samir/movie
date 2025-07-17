@@ -1,0 +1,10 @@
+.SectionTitle  {
+    border-left: 4px solid var(--main-color);
+    padding: 5px 13px;
+    margin: 30px 0;
+    
+}
+
+.SectionTitle h3{
+ color:  rgba(var(--bs-white-rgb));
+}

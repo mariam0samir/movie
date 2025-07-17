@@ -1,0 +1,90 @@
+.movie-top-rated {
+  border: 1px solid rgba(255, 255, 255, 0.443);
+  height: 400px;
+  z-index: 5;
+}
+.movie-top-rated .movie-info {
+  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.movie-top-rated:hover .movie-info {
+  opacity: 1;
+  visibility: visible;
+  
+}
+.movie-top-rated .movie-info > svg {
+  background-color: rgba(255, 255, 255, 0.226);
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer !important;
+ 
+}
+.movie-top-rated .movie-info > svg:hover,
+.movie-top-rated .movie-info > svg.active {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+.movie-top-rated .movie-info >a{
+  text-decoration: none;
+}
+.movie-top-rated .add-to-fav svg {
+  width: 45px !important;
+  height: 45px !important;
+
+}
+
+/*  */
+.movie-card {
+  border: 1px solid rgba(255, 255, 255, 0.516);
+  height: 250px !important;
+  overflow: hidden;
+}
+.movie-card img {
+  cursor: pointer;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.movie-card:hover img {
+  scale: 1.1;
+  rotate: 5deg;
+}
+.movie-card > div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.767);
+  color: white;
+}
+.movie-card > div svg {
+  background-color: rgba(255, 255, 255, 0.226);
+  color: white;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.movie-card > div svg:hover,
+.movie-card > div svg.active {
+  background-color: var(--main-color);
+  color: white;
+}
+.movie-card > div svg.act {
+  background-color: rgba(255, 255, 255, 0.226) !important;
+  color: white !important;
+}
