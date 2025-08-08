@@ -1,4 +1,7 @@
+
 {
+  
+
   "name": "movies-app",
   "version": "0.1.0",
   "private": true,
@@ -25,12 +28,16 @@
     "swiper": "^11.2.6",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://mariam0samir.github.io/movie",
+
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -51,6 +58,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17"
   }

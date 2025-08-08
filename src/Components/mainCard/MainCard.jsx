@@ -14,10 +14,8 @@ export default function MainCard ({ item }) {
   return (
     <div className="main-card">
       <img src={image} alt={title} />
-
       <div className="info text-white">
         <h2 className="fw-bold">{title}</h2>
-
         <div className="mt-4 mb-4 d-flex justify-content-between">
           <span className="fw-bold  d-flex justify-content-center">
             <BiMoviePlay className="rounded me-2 mb-1 text-red fs-20" />

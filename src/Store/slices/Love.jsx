@@ -24,7 +24,7 @@ const Love = createSlice({
       }
     },
 
-    removeAll: (state, action) => {
+    removeAll: (state) => {
       localStorage.removeItem("love");
       state.length = 0;
     },

@@ -6,8 +6,8 @@ import {SEARCH_URL}from '../../Utils/URL'
 
 export const fetchSearchMovies=createAsyncThunk(
 "searchSlice/fetchSearchMovies",
-    async({ word, num = 1 })=>{
-     const res=await axios.get(`${SEARCH_URL}&query=${word}&page=${num}`)
+    async({ word })=>{
+     const res=await axios.get(`${SEARCH_URL}&query=${word}`)
       return res.data
     }
    
